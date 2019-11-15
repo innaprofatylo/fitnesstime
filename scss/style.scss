@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Oswald:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:800&display=swap');
+@font-face {
+	font-family: 'Droid Serif';
+	src: url(../fonts/DroidSerif-Italic.woff2) format('woff2'),
+		 url(../fonts/DroidSerif-Italic.woff) format('woff');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@import "normalize";
+@import "layout";
+@import "elements";
+
+
+$primary-color: #e25050;
+
+$body-font-family: 'Oswald', sans-serif;
+$text-font-family: 'Open Sans', sans-serif;
+$text-color: #202020;
+$text-color-light: #929292;
+
+
+
+$medium: 640px;
+$large: 1024px;
+
+body{
+font: 400 12px/1.2 $body-font-family;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+	width: 100%;
+}
+@import "header";
+@import "section-intro";
+@import "features";
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0 0 30px;
+	line-height: 1.2;
+}
+
+.ba-section{
+	padding: 60px 0 65px;
+}
+.ba-section{
+	
+	&--team{
+		background: #44464d url(../img/team/bgteam.jpg) 50% no-repeat;
+		background-size: cover;
+		padding: 0 0 60px;
+		
+	}
+	&--gallery{
+		padding: 52px 0 30px;
+	}
+	&--pricing{
+		background-color: $primary-color;
+		padding: 0 0 50px;
+	}
+	&--partners{
+		padding: 52px 0 5px;
+	}
+	&--contact{
+		background: #202020 url(../img/contact/world-map.png) 50% no-repeat;
+		background-size: cover;
+		color: #fff;
+		padding: 25px 0 65px; 
+	}
+}
+.ba-section-title{
+	font-size: 24px;
+	font-family: $body-font-family;
+	color: #fff;
+	text-align: center;
+	padding: 55px 0;
+	margin: 0;
+	line-height: 1.4;
+	text-transform: uppercase;
+
+	
+	
+	&::after{
+		content: '';
+		 display: block;
+		 height: 1px;
+		 background-color: #fff;
+		 width: 45px;
+		 margin: 6px auto 0;
+	
+		
+	}
+}
+.ba-section-title{
+	&--gallery, &--partners{
+		color: $text-color;
+		margin: 0px 0 18px;
+		padding: 0;
+					
+		&::after{
+			content: '';
+			 display: block;
+			 height: 1px;
+			 background-color: $text-color;
+			 width: 45px;
+			 margin: 6px auto 0;
+			 
+			
+		}
+	}
+	&--partners{
+		margin: 0px 0 65px;
+	}
+	&--team{
+		margin-bottom: 5px;
+	}
+	&--pricing{
+		padding: 52px 0 62px;
+		
+	}
+}
+
+.ba-row--team, .ba-row--gallery{
+	img{
+		width: 100%;
+	}
+}
+.ba-team{
+	background-color: #fff;
+	margin: -2px 0 20px;
+	padding: 20px;
+	text-transform: uppercase;
+	max-width: 100%;
+	
+		@media screen and (min-width: $large){
+		margin: -2px 0;
+		max-width: 270px;
+	}
+	
+	&--name{
+		margin: 0 0 10px;
+		font-size: 24px;
+
+		@media screen and (min-width:$medium){
+			font-size: 18px;
+		}
+
+		@media screen and (min-width:$large){
+			font-size: 14px;
+			margin: 0 0 7px;
+		}
+	}
+
+	&--prof{
+		font-size: 20px;
+		color: $text-color-light;
+		margin: 0;
+
+		@media screen and (min-width:$medium){
+			font-size: 16px;
+		}
+
+		@media screen and (min-width:$large){
+			font-size: 12px;
+		}
+	}
+}
+.ba-img-gallery{
+	margin-bottom: 30px;
+}
+@import "pricing";
+.ba-col-partners{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	flex-wrap: wrap;
+
+	img{
+		max-height: 31px;
+		margin-bottom: 20px;
+	}
+}
+@import "contact";
+.ba-footer{
+	display: flex;
+	justify-content: space-between;
+	color: #707070;
+	font-family: $text-font-family;
+
+	a{
+		color: $primary-color;
+		text-decoration: none;
+	}
+}

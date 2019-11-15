@@ -1,0 +1,58 @@
+.ba-title-section{
+	text-align: center;
+	margin-top: 55px 0 70px;
+}
+.ba-title--features{
+	font-size: 30px;
+	font-family: $body-font-family;
+	font-weight: 400;
+	color: $text-color;
+	text-transform: uppercase;
+	letter-spacing: 1.8px;
+	line-height: 1.2;
+	margin-bottom: 8px;
+}
+span{
+	color: $primary-color;
+}
+.ba-text-title{
+	font-family: 'Droid Serif';
+	font-weight: 400;
+	font-style: italic;
+	font-size: 16px;
+	color: $text-color-light;
+	letter-spacing: 0.8px;
+	margin: 0 0 23px;
+}
+.ba-text-title{
+	&--features{
+margin-bottom: 43px;
+	}
+	&--gallery{
+		text-align: center;
+		font-style: normal;
+		margin-bottom: 60px;
+		font-family: $text-font-family;
+		line-height: 21px;
+		letter-spacing: 0.1px;
+		font-size: 12px;
+	}
+
+}
+img{
+	margin-right: 17px;
+}
+.ba-subtitle{
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+
+
+}
+.ba-text{
+	font-size: 13px;
+	font-family: $text-font-family;
+	color: $text-color-light;
+	line-height: 1.6;
+	margin-bottom: 0;
+}

@@ -1,0 +1,108 @@
+svg{
+	fill: #fff;
+}
+a + a{
+	margin-left: 20px;
+}
+.ba-contact-up{
+display: flex;
+justify-content: space-between;
+border-bottom: 1px solid #4e4e4e;
+}
+.ba-social-text{
+width: 575px;
+height: 35px;
+color: #ffffff;
+font-family: "Open Sans";
+font-size: 13px;
+font-weight: 300;
+line-height: 22px;
+color: #717171;
+
+p{
+	color: #fff;
+}
+span{
+	color: #717171;
+}
+}
+.ba-social{
+	right: 30px;
+	padding: 40px 0;
+	position: absolute;
+	text-decoration: none;
+	margin-top: 100px;
+svg:hover{
+	color: $primary-color;
+}
+}
+.ba-contact-info{
+	padding: 0;
+	margin-bottom: 25px;
+}
+.ba-information{
+	padding-top: 162px;
+	display: flex;
+	flex-direction: column;
+
+	@media screen and (min-width:$large){
+		display: flex;
+		flex-direction: row;
+	}
+}
+.ba-information-title{
+	text-transform: uppercase;
+	font-size: 14px;
+
+}
+.ba-information-text, .ba-info-contact{
+	font-size: 12px;
+	font-weight: 300;
+	font-family: $text-font-family;
+	color: #c6c6c6;
+	line-height: 21px;
+	text-decoration: none;
+}
+.ba-contact{
+	
+}
+.ba-contact-form{
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	color: #656565;
+
+	@media screen and (min-width:$large){
+		flex-direction: row;
+	}
+	
+}
+.ba-info-form{
+margin-bottom: 0 0 18px;
+
+input + input{
+	margin-bottom: 20px;
+
+	@media screen and (min-width:$large){
+		margin-left: 20px;
+	}
+}
+}
+.ba-info-messege{
+	width: 66.66%;
+	margin-bottom: 15px;
+}
+.ba-input-list{
+	max-width: 212px;
+	max-height: 36px;
+	margin-bottom: 15px;
+}
+.ba-button--contact{
+	border: none;
+	max-width: 212px;
+	max-height: 36px;
+
+	img{
+		padding-left: 15px;
+	}
+}

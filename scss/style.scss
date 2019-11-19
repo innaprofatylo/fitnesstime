@@ -188,6 +188,13 @@ h1,h2,h3,h4,h5,h6{
 	flex-wrap: wrap;
 	align-items: flex-start;
 
+	@media screen and (max-width:$large - 1px){
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
 	img{
 		
 		margin-bottom: 8px;
@@ -196,12 +203,12 @@ h1,h2,h3,h4,h5,h6{
 @import "contact";
 .ba-footer{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	color: #707070;
 	font-family: $text-font-family;
 
 	a{
 		color: $primary-color;
-		display: block;
+		
 	}
 }

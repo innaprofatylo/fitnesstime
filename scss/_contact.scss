@@ -7,6 +7,10 @@ a + a{
 .ba-contact-up{
 border-bottom: 1px solid #4e4e4e;
 
+@media screen and (max-width:$large - 1px){
+	display: flex;
+	flex-wrap: wrap;
+}
 }
 .ba-twitter-text{
 width: 600px;
@@ -34,6 +38,11 @@ span{
 	justify-content: flex-end;
 	align-items: flex-end;
 	
+	@media screen and (max-width:$large - 1px){
+		display: flex;
+	justify-content: center;
+	align-items: center;
+	}
 svg:hover{
 	cursor: pointer;
 	fill: $primary-color;
@@ -52,6 +61,10 @@ svg:hover{
 	&--form{
 		margin-bottom: 30px;
 		padding-left: 39px;
+
+		@media screen and (max-width:$large - 1px){
+			padding-left: 10px;
+		}
 	}
 }
 .ba-information-text, .ba-info-contact{
@@ -71,6 +84,10 @@ svg:hover{
 .ba-contact-info{
 	max-width: 400px;
 	margin-left: 15px;
+
+	@media screen and (max-width:$large - 1px){
+		max-width: 100%;
+	}
 }
 .ba-contact-form{
 	display: grid;
@@ -78,12 +95,23 @@ svg:hover{
 	grid-template-rows: 36px;
 	grid-gap: 17px;
 	margin-left: 38px;
+
+	@media screen and (max-width:$large - 1px){
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 .ba-info-messege{
 	grid-column-start: 1;
 	grid-column-end: 3;
 	border: 1px solid #7d7d7d;
 background-color: inherit;
+
+@media screen and (max-width:$large - 1px){
+	width: 100%;
+	margin: 0 10px 10px;
+}
 }
 .ba-submit{
 	grid-column-start: 3;
@@ -96,6 +124,11 @@ background-color: inherit;
 	width: 100%;
 	padding: 9px 18px;
 	font-size: 16px;
+
+	@media screen and (max-width:$large - 1px){
+		width: 100%;
+		margin-left: 10px;
+	}
 }
 .ba-button-img{
 	padding-left: 5px;
@@ -104,6 +137,11 @@ background-color: inherit;
 border: 1px solid #7d7d7d;
 background-color: inherit;
 padding: 12px;
+
+@media screen and (max-width:$large - 1px){
+	width: 100%;
+	margin: 0 10px 10px;
+}
 
 &::placeholder{
 	text-transform: uppercase;
@@ -114,5 +152,12 @@ padding: 12px;
 	font-family: $text-font-family;
 	font-weight: 300;
 	color: #707070;
+
+	@media screen and (max-width:$large - 1px){
+		margin-left: 10px;
+	}
+}
+.ba-footer-hidden{
+	display: none;
 }
 

@@ -24,7 +24,32 @@
 		display: flex;
 		padding-top: 8px;
 	 }
+	 @media screen and (max-width: $large - 1px){
+		position: fixed;
+		height: 100vh;
+		width: 100vw;
+		top: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		background-color: rgba(#000, 0.6);
+		opacity: 0;
+		visibility: hidden;
+		transition: 0.2s;
+		transition-property: transform, opacity, visibility;
+		transform: scale(0.8);
+ 
+		&.active{
+			opacity: 1;
+			visibility: visible;
+			transform: scale(1);
+ 
+		}
+	} 
 }
+
 .ba-menu-toggle {
 	border: none;
 	background: none;
@@ -41,16 +66,13 @@
 	&:hover, &:focus{
 		background: none;
 		color: $primary-color;
-		border: none;
+		outline: none;
 	}
  }
 .ba-menu-toggle svg{
 	fill:currentColor;
 }
-.ba-menu-toggle:focus, .ba-menu-toggle:hover{
-	outline: none;
-	color: $primary-color;
-}
+
 @media (min-width: $large){
 	.ba-main-nav{
 		 
@@ -76,6 +98,10 @@
 	letter-spacing: 0.4px;
 	padding: 5px 10px;
 	
+	@media screen and (max-width:$large - 1px){
+		font-size: 26px;
+		
+	}
 }
 .ba-menu a:hover{
 	background-color: $primary-color;

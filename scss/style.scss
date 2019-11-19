@@ -27,13 +27,14 @@ $large: 1024px;
 
 body{
 font: 400 12px/1.2 $body-font-family;
+
 }
 
 /* Layout */
 .ba-container{
 	padding-left: 20px;
 	padding-right: 20px;
-	max-width: 1200px;
+	max-width: 1210px;
 	width: 100%;
 }
 @import "header";
@@ -66,11 +67,14 @@ h1,h2,h3,h4,h5,h6{
 	&--partners{
 		padding: 52px 0 5px;
 	}
-	&--contact{
+	&--big{
 		background: #202020 url(../img/contact/world-map.png) 50% no-repeat;
 		background-size: cover;
 		color: #fff;
-		padding: 25px 0 65px; 
+		padding: 0 0 30px;
+	}
+	&--contact{
+		padding: 25px 0 80px; 
 	}
 }
 .ba-section-title{
@@ -128,21 +132,22 @@ h1,h2,h3,h4,h5,h6{
 .ba-row--team, .ba-row--gallery{
 	img{
 		width: 100%;
+		display: block;
 	}
 }
 .ba-team{
 	background-color: #fff;
-	margin: -2px 0 20px;
+	margin: 0 0 20px;
 	padding: 20px;
 	text-transform: uppercase;
 	max-width: 100%;
 	
 		@media screen and (min-width: $large){
-		margin: -2px 0;
+		margin: 0;
 		max-width: 270px;
 	}
 	
-	&--name{
+	&__name{
 		margin: 0 0 10px;
 		font-size: 24px;
 
@@ -156,10 +161,12 @@ h1,h2,h3,h4,h5,h6{
 		}
 	}
 
-	&--prof{
+	&__prof{
 		font-size: 20px;
 		color: $text-color-light;
 		margin: 0;
+		line-height: 11px;
+		letter-spacing: 0.6px;
 
 		@media screen and (min-width:$medium){
 			font-size: 16px;
@@ -179,10 +186,11 @@ h1,h2,h3,h4,h5,h6{
 	justify-content: space-between;
 	margin-bottom: 50px;
 	flex-wrap: wrap;
+	align-items: flex-start;
 
 	img{
-		max-height: 31px;
-		margin-bottom: 20px;
+		
+		margin-bottom: 8px;
 	}
 }
 @import "contact";
@@ -194,6 +202,6 @@ h1,h2,h3,h4,h5,h6{
 
 	a{
 		color: $primary-color;
-		text-decoration: none;
+		display: block;
 	}
 }

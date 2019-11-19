@@ -2,58 +2,57 @@ svg{
 	fill: #fff;
 }
 a + a{
-	margin-left: 20px;
+	margin-left: 10px;
 }
 .ba-contact-up{
-display: flex;
-justify-content: space-between;
 border-bottom: 1px solid #4e4e4e;
+
 }
-.ba-social-text{
-width: 575px;
-height: 35px;
+.ba-twitter-text{
+width: 600px;
 color: #ffffff;
 font-family: "Open Sans";
 font-size: 13px;
 font-weight: 300;
 line-height: 22px;
-color: #717171;
+margin: 0 0 32px 10px;
+display: inline-block;
 
-p{
-	color: #fff;
+svg{
+	margin-right: 10px;
+	position: absolute;
+	margin: 0 10px;
 }
+
 span{
 	color: #717171;
 }
 }
 .ba-social{
-	right: 30px;
-	padding: 40px 0;
-	position: absolute;
 	text-decoration: none;
-	margin-top: 100px;
-svg:hover{
-	color: $primary-color;
-}
-}
-.ba-contact-info{
-	padding: 0;
-	margin-bottom: 25px;
-}
-.ba-information{
-	padding-top: 162px;
 	display: flex;
-	flex-direction: column;
-
-	@media screen and (min-width:$large){
-		display: flex;
-		flex-direction: row;
-	}
+	justify-content: flex-end;
+	align-items: flex-end;
+	
+svg:hover{
+	cursor: pointer;
+	fill: $primary-color;
+}
+}
+.ba-contact{
+	
 }
 .ba-information-title{
 	text-transform: uppercase;
 	font-size: 14px;
-
+	padding-top: 42px;
+	margin-bottom: 25px;
+	padding-left: 0px;
+	
+	&--form{
+		margin-bottom: 30px;
+		padding-left: 39px;
+	}
 }
 .ba-information-text, .ba-info-contact{
 	font-size: 12px;
@@ -62,47 +61,58 @@ svg:hover{
 	color: #c6c6c6;
 	line-height: 21px;
 	text-decoration: none;
+	margin: 0 0 20px;
+
 }
-.ba-contact{
-	
+/*img{
+	margin-right: 10px;
+}*/
+
+.ba-contact-info{
+	max-width: 400px;
+	margin-left: 15px;
 }
 .ba-contact-form{
-	display: flex;
-	flex-direction: column;
-	margin: 0;
-	color: #656565;
-
-	@media screen and (min-width:$large){
-		flex-direction: row;
-	}
-	
-}
-.ba-info-form{
-margin-bottom: 0 0 18px;
-
-input + input{
-	margin-bottom: 20px;
-
-	@media screen and (min-width:$large){
-		margin-left: 20px;
-	}
-}
+	display: grid;
+	grid-template-columns: 212px 212px 212px;
+	grid-template-rows: 36px;
+	grid-gap: 17px;
+	margin-left: 38px;
 }
 .ba-info-messege{
-	width: 66.66%;
-	margin-bottom: 15px;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	border: 1px solid #7d7d7d;
+background-color: inherit;
 }
-.ba-input-list{
-	max-width: 212px;
-	max-height: 36px;
-	margin-bottom: 15px;
+.ba-submit{
+	grid-column-start: 3;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 2;
 }
 .ba-button--contact{
 	border: none;
-	max-width: 212px;
-	max-height: 36px;
+	width: 100%;
+	padding: 9px 18px;
+	font-size: 16px;
+}
+.ba-button-img{
+	padding-left: 5px;
+}
+.ba-input-list{
+border: 1px solid #7d7d7d;
+background-color: inherit;
+padding: 12px;
 
-	img{
-		padding-left: 15px;
+&::placeholder{
+	text-transform: uppercase;
 	}
 }
+.ba-text-button{
+	font-size: 12px;
+	font-family: $text-font-family;
+	font-weight: 300;
+	color: #707070;
+}
+

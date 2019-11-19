@@ -10,7 +10,8 @@
 	text-transform: uppercase;
 	letter-spacing: 1.8px;
 	line-height: 1.2;
-	margin-bottom: 8px;
+	margin-bottom: 6px;
+	font-stretch: ultra-expanded;
 }
 span{
 	color: $primary-color;
@@ -21,12 +22,13 @@ span{
 	font-style: italic;
 	font-size: 16px;
 	color: $text-color-light;
-	letter-spacing: 0.8px;
-	margin: 0 0 23px;
+	line-height: 30px;
+	margin: 0 0 15px;
+	font-stretch: ultra-condensed;
 }
 .ba-text-title{
 	&--features{
-margin-bottom: 43px;
+margin-bottom: 38px;
 	}
 	&--gallery{
 		text-align: center;

@@ -6,14 +6,17 @@ a + a{
 }
 .ba-contact-up{
 border-bottom: 1px solid #4e4e4e;
+display: flex;
+justify-content: space-between;
+align-items: center;
 
 @media screen and (max-width:$large - 1px){
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 }
 }
 .ba-twitter-text{
-width: 600px;
+max-width: 600px;
 color: #ffffff;
 font-family: "Open Sans";
 font-size: 13px;

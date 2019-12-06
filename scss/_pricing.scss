@@ -61,11 +61,12 @@ sup{
 .ba-list{
 	padding: 6px 0 0 30px;
 	line-height: 1.7;
+	
 }
 .ba-list li{
 	list-style: none;
 	font-family: $text-font-family;
-	
+	list-style-image: url(../img/pricing/tick.png);
 }
 ul{
 	padding: 0;
